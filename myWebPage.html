@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
+
+    <style media="screen" type="text/css">
+        .isButton{
+            width:100%;
+            height:45px;
+            background-color: yellow;
+            border: 2px solid;
+            border-radius: 5px;
+            text-align: center;
+            font-size:35px;
+        }
+
+        #resultDisplay{
+            font-size:15px;
+            font-weight:bold;
+        }
+    </style>
+
+    <script>
+        
+        function printSomethingWhenHTMLButtonClicked(){
+            return "this value is from printSomethingWhenHTMLButtonClicked() function"
+        }
+
+    </script>
+    
+</head>
+<body>
+    <br/>
+    <br/>
+    This button is clicked, Swift intercepts and prints to the console.
+    <br/>
+    <br/>
+    <div class="isButton" onclick="sendCount()">Show Click Count</div>
+    <br/>
+    <br/>
+    <div id="resultDisplay">Result Display</div>
+    <br/>
+    <br/>
+    <div class="isButton tall" onclick="doLibCall()">Show someJSLibrary Function Result</div>
+</body>
+</html>
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebView_JS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkA-aN-afp">
+                                <rect key="frame" x="245" y="285" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.68859755696788205" green="0.26320904390879962" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bPI-aK-D6w"/>
+                                    <constraint firstAttribute="width" constant="134" id="rLY-cy-H6D"/>
+                                </constraints>
+                                <state key="normal" title="IOS Alert Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bPI-aK-D6w"/>
+                                        <exclude reference="rLY-cy-H6D"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="alertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="quf-Ox-hOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HkA-aN-afp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ya-8T-r5E"/>
+                            <constraint firstItem="HkA-aN-afp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="22" id="GEz-oz-KgI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HkA-aN-afp" secondAttribute="bottom" constant="285" id="SXM-eO-XtN"/>
+                            <constraint firstItem="HkA-aN-afp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="530" id="Swh-oE-826"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HkA-aN-afp" secondAttribute="bottom" constant="20" id="Z6x-uD-uCW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Z6x-uD-uCW"/>
+                                <exclude reference="GEz-oz-KgI"/>
+                                <exclude reference="Swh-oE-826"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="alertButton" destination="HkA-aN-afp" id="qsi-iX-TL9"/>
+                        <outlet property="containerView" destination="8bC-Xf-vdC" id="coU-iz-shm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="332"/>
+        </scene>
+    </scenes>
+</document>
